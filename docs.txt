@@ -1,0 +1,1 @@
+nx g @nx/js:library ui-styles --directory=shared --importPath=@shared/ui-styles

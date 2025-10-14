@@ -1,0 +1,15 @@
+/* این خط مهمه — وارد کردن Tailwind با تنظیمات پیش‌فرض */
+@import "tailwindcss";
+
+/* اگر بخوای تنظیمات سفارشی تم بدی */
+@theme {
+  /* مثال: رنگ‌ها یا متغیرهای تم */
+  --color-primary: #1e40af;
+  --color-secondary: #10b981;
+
+  /* تعریف keyframes سفارشی */
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
