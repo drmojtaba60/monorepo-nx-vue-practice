@@ -1,10 +1,4 @@
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'Index.vue',
-});
-</script>
+<script lang="ts"></script>
 
 <template>Card....</template>
 

@@ -1,1 +1,24 @@
-nx g @nx/js:library ui-styles --directory=shared --importPath=@shared/ui-styles
+--incorrect : nx g @nx/js:library ui-styles --directory=shared --importPath=@shared/ui-styles
+--valid and correct : nx g @nx/js:library ui-styles --directory=libs/shared/ui-styles --importPath=@shared/ui-styles --bundler=vite --style=css
+--yarn add tailwindcss@latest vite-plugin-tailwindcss -D -W
+
+خطای نصب tailwind
+ راه صحیح در Nx Monorepo با Yarn
+استفاده از پرچم -W برای نصب روی workspace root به‌صورت صریح:
+
+
+content_copy
+bash
+
+note_add
+ویرایش با Canvas
+yarn add -D tailwindcss -W
+یا معادل طولانی‌تر:
+
+
+content_copy
+bash
+
+note_add
+ویرایش با Canvas
+yarn add -D tailwindcss --ignore-workspace-root-check

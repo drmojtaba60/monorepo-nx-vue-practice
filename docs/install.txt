@@ -1,0 +1,3 @@
+nx generate @nx/vue:library components --directory=libs/components --bundler=vite --style=less
+nx g @nx/vue:library components --directory=libs/components --publishable --importPath=@components --bundler=vite
+

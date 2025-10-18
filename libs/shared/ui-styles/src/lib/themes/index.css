@@ -1,0 +1,7 @@
+@import "./ocean.less";
+@import "./forest.less";
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}

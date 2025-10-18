@@ -1,15 +1,18 @@
-/* این خط مهمه — وارد کردن Tailwind با تنظیمات پیش‌فرض */
+/* 🧩 پایه Tailwind */
 @import "tailwindcss";
 
-/* اگر بخوای تنظیمات سفارشی تم بدی */
-@theme {
-  /* مثال: رنگ‌ها یا متغیرهای تم */
-  --color-primary: #1e40af;
-  --color-secondary: #10b981;
+/* 🧩 تم و سفارشی‌سازی سازمانی */
+@import "./theme.css";
 
-  /* تعریف keyframes سفارشی */
-  @keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+/* 🧩 استایل‌های عمومی قابل اشتراک */
+@layer base {
+  html, body {
+    @apply font-sans antialiased text-gray-900 bg-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 rounded-lg bg-[--color-primary] text-white hover:bg-blue-700 transition;
   }
 }

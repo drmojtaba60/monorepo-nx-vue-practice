@@ -16,6 +16,9 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@my-vue-monorepo/source"]
+    "customConditions": ["@my-vue-monorepo/source"],
+    "paths": {
+      "@components": ["libs/components/src/index.ts"]
+    }
   }
 }

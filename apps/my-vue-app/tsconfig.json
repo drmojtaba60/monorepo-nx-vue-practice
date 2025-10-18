@@ -1,8 +1,16 @@
 {
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
   "extends": "../../tsconfig.base.json",
   "files": [],
   "include": [],
   "references": [
+    {
+      "path": "../../libs/shared/ui-styles"
+    },
     {
       "path": "./tsconfig.app.json"
     }
